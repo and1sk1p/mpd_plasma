@@ -110,6 +110,46 @@ depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+#=============================================================================
+# Target rules for targets named plasma
+
+# Build rule for target.
+plasma: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 plasma
+.PHONY : plasma
+
+# fast build rule for target.
+plasma/fast:
+	$(MAKE) -f CMakeFiles/plasma.dir/build.make CMakeFiles/plasma.dir/build
+.PHONY : plasma/fast
+
+plasma.o: plasma.cpp.o
+
+.PHONY : plasma.o
+
+# target to build an object file
+plasma.cpp.o:
+	$(MAKE) -f CMakeFiles/plasma.dir/build.make CMakeFiles/plasma.dir/plasma.cpp.o
+.PHONY : plasma.cpp.o
+
+plasma.i: plasma.cpp.i
+
+.PHONY : plasma.i
+
+# target to preprocess a source file
+plasma.cpp.i:
+	$(MAKE) -f CMakeFiles/plasma.dir/build.make CMakeFiles/plasma.dir/plasma.cpp.i
+.PHONY : plasma.cpp.i
+
+plasma.s: plasma.cpp.s
+
+.PHONY : plasma.s
+
+# target to generate assembly for a file
+plasma.cpp.s:
+	$(MAKE) -f CMakeFiles/plasma.dir/build.make CMakeFiles/plasma.dir/plasma.cpp.s
+.PHONY : plasma.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -118,6 +158,10 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... plasma"
+	@echo "... plasma.o"
+	@echo "... plasma.i"
+	@echo "... plasma.s"
 .PHONY : help
 
 

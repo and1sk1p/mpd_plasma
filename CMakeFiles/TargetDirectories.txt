@@ -1,2 +1,3 @@
 /home/and1skip/Workspace/mpd_plasma/CMakeFiles/rebuild_cache.dir
 /home/and1skip/Workspace/mpd_plasma/CMakeFiles/edit_cache.dir
+/home/and1skip/Workspace/mpd_plasma/CMakeFiles/plasma.dir
